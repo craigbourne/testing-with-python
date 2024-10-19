@@ -2,7 +2,6 @@
 # SOURCE OF CODE: https://docs.pylint.org/en/1.6.0/tutorial.html
 
 import string
- 
 shift = 3
 choice = raw_input("would you like to encode or decode?")
 word = (raw_input("Please enter text"))
@@ -14,7 +13,7 @@ if choice == "encode":
       encoded = encoded + ' '
     else:
       x = letters.index(letter) + shift
-      encoded=encoded + letters[x]
+      encoded = encoded + letters[x]
     if choice == "decode":
       for letter in word:
         if letter == ' ':
@@ -23,4 +22,4 @@ if choice == "encode":
           x = letters.index(letter) - shift
           encoded = encoded + letters[x]
 
-print encoded
+print(encoded)
